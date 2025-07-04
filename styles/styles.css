@@ -1,0 +1,87 @@
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.nav ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 5px;
+}
+.nav ul li {
+  background-color: black;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 10px;
+  text-align: center;
+}
+.nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+main h1 {
+  font-size: 40px;
+  text-align: center;
+}
+main p {
+  font-size: 20px;
+  text-align: center;
+}
+main img {
+  height: 60%;
+  width: 100%;
+}
+
+footer {
+  text-align: center;
+  grid-column: 1/4;
+}
+footer p {
+  font-size: 20px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  grid-template-areas: "header header header" ". main ." "footer footer footer";
+  background-color: red;
+}
+
+header {
+  grid-area: header;
+}
+
+main {
+  grid-area: main;
+}
+
+footer {
+  grid-area: footer;
+}
+
+@media (max-width: 425px) {
+  main h1 {
+    font-size: 20px;
+    text-align: center;
+  }
+  main p {
+    font-size: 10px;
+    text-align: center;
+  }
+  main img {
+    height: 60%;
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

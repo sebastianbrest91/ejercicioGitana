@@ -1,0 +1,50 @@
+@import"variable1";
+@import "header";
+@import "main";
+@import "footer";
+@import "dados";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto ;
+    grid-template-areas:
+    "header header header"
+    ". main ."
+    "footer footer footer";
+    background-color: $colorprimario;
+}
+
+header {
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+}
+
+@include celular{
+    main{
+    h1{
+        font-size: 20px;
+        text-align: center;
+    }
+    p{
+        font-size: 10px;
+        text-align: center;
+    }
+    img{
+        height: 60%;
+        width: 100%;
+    }
+}
+}

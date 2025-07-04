@@ -1,0 +1,26 @@
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.nav{
+    ul{
+        list-style: none;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 5px;
+        li{
+            background-color: black;
+            padding: 10px;
+            border: 2px solid black;
+            border-radius: 10px;
+            text-align: center;
+            a{
+                color: white;
+                text-decoration: none;
+                font-size: 20px;
+            }
+        } 
+    }
+}

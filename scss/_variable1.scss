@@ -1,0 +1,9 @@
+$colorprimario: red;
+$colorsecundario: orange;
+$colorterciario: black;
+
+@mixin celular{
+    @media (max-width: 425px){
+        @content
+    }
+}
