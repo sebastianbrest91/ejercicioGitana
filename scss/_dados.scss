@@ -1,0 +1,39 @@
+h1{
+    font-size: 50px;
+    text-align: center;
+}
+h2{
+    font-size: 30px;
+    text-align: center;
+}
+.carrousel-container1 {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+}
+
+.carrousel-img1 {
+    min-width: 100%;
+    height: auto;
+    display: none;
+}
+
+.carrousel-img1.active {
+    display: block;
+}
+
+.carrousel-container2 {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+}
+
+.carrousel-img2 {
+    min-width: 100%;
+    height: auto;
+    display: none;
+}
+
+.carrousel-img2.active {
+    display: block;
+}

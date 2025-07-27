@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Predicciones - On-Line</title>
+    <title>Anotador - On-Line</title>
     <link rel="stylesheet" href="../styles/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <meta name="description" content="c">
     <meta name="keywords" content="c">
     <meta name="author" content="Sebastian Brest">
-    <script src="../js/predicciones.js" defer ></script>
+    <script src="../js/anotador.js" defer ></script>
 </head>
 <body>
     <header>
@@ -26,30 +26,35 @@
             </nav>
         </div>
     </header>
-    <main class="mainpredicciones">
+    <main class="mainanotador">
         <section>
-            <h1>¿Quien ganara?</h1>
-            <p>Solo con saber el nombre de los concursantes la Gitana te dira quien gano</p>
-            <img  class="imglogog" src="../img/logog.jpg" alt="gdegitana">
+            <h1>Anotador</h1>
+            <p>Exelente anotador on-line para juegos de cartas</p>
         </section>
-        <section>
-            <form id="formjugadores">
-                <div>
-                    <label for="nombre1">Nombre 1:</label>
-                    <input type="text" name="nombre1" id="nombre1" required>
-                </div>
-                <div>
-                    <label for="nombre2">Nombre 2:</label>
-                    <input type="text" name="nombre2" id="nombre2" required>
-                </div>
-                <div>
-                    <button type="submit">ENVIAR</button>
-                </div>
-                <div>
-                    <label for="ganador">Ganador:</label>
-                    <input type="text" name="ganador" id="ganador" readonly>
-                </div>
-            </form>
+        <section class="tabla">
+            <table id="tablaJugadores">
+                <thead>
+                <tr>
+                    <th class="th1">Jugador 1</th>
+                    <th class="th2">Jugador 2</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th class="th1">
+                        <input type="number">
+                    </th>
+                    <th class="th2">
+                        <input type="number">
+                    </th>
+                </tr>
+                </tbody>
+            </table>
+            <button id="sumar">Sumar</button>
+            <div id="resultados">
+                <p>Jugador 1: <span id="totalJugador1">0</span></p>
+                <p>Jugador 2: <span id="totalJugador2">0</span></p>
+            </div>
         </section>
     </main>
     <footer>

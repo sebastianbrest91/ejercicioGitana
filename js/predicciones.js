@@ -1,11 +1,12 @@
-let nombre1 = prompt ("¡Quien sera el primero en ser desafiado?")
-    console.log("Suerte " + nombre1 + " en tu aventura")
+const jugadores = document.getElementById('formjugadores') 
+const nombre1 = document.getElementById('nombre1')
+const nombre2 = document.getElementById('nombre2')
+const ganadorInput = document.getElementById('ganador')
 
-let nombre2 = prompt ("¡Quien sera el segundo en ser desafiado??")
-    console.log("Suerte " + nombre2 + " en tu aventura")
-
-let participantes = [nombre1, nombre2]
-    console.log(participantes)
+jugadores.addEventListener ('submit',(evt)=> {
+    evt.preventDefault()
+    const newnombre1 = nombre1.value
+    const newnombre2 = nombre2.value
 
 let puntosJugador1 = 30
 let puntosJugador2 = 30
@@ -32,14 +33,18 @@ else if (tiroJugador1 > tiroJugador2){
 
 console.log("round " + round)
 
-console.log("puntos de "+ nombre1 + " " + puntosJugador1)
+console.log(newnombre1 + " " + puntosJugador1)
 
-console.log("puntos de "+ nombre2 + " " + puntosJugador2)
+console.log(newnombre2 + " " + puntosJugador2)
 
 }
-
+let ganador
 if(puntosJugador1 > puntosJugador2){
-    console.log("GANADOR "+ nombre1)
+    ganador = newnombre1
 } else{
-    console.log("GANADOR " + nombre2)
+    ganador = newnombre2
 }
+
+ganadorInput.value = ganador
+
+})

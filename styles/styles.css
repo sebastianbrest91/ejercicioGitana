@@ -2,6 +2,7 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .nav ul {
@@ -16,6 +17,7 @@ header {
   border: 2px solid black;
   border-radius: 10px;
   text-align: center;
+  margin: 2px;
 }
 .nav ul li a {
   color: white;
@@ -42,6 +44,126 @@ footer {
 }
 footer p {
   font-size: 20px;
+}
+
+h1 {
+  font-size: 50px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 30px;
+  text-align: center;
+}
+
+.carrousel-container1 {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+}
+
+.carrousel-img1 {
+  min-width: 100%;
+  height: auto;
+  display: none;
+}
+
+.carrousel-img1.active {
+  display: block;
+}
+
+.carrousel-container2 {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+}
+
+.carrousel-img2 {
+  min-width: 100%;
+  height: auto;
+  display: none;
+}
+
+.carrousel-img2.active {
+  display: block;
+}
+
+div {
+  font-size: 20px;
+  text-align: center;
+}
+
+.mainpredicciones h1 {
+  font-size: 40px;
+  text-align: center;
+}
+.mainpredicciones p {
+  font-size: 20px;
+  text-align: center;
+}
+
+.imglogog {
+  height: 60%;
+  width: 100%;
+}
+
+#formjugadores {
+  text-align: center;
+}
+
+label {
+  font-size: 20px;
+}
+
+input {
+  font-size: 20px;
+}
+
+button {
+  background-color: deepskyblue;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10%;
+}
+
+.mainanotador h1 {
+  font-size: 40px;
+  text-align: center;
+}
+.mainanotador p {
+  font-size: 20px;
+  text-align: center;
+}
+
+.tabla {
+  text-align: center;
+}
+
+.th1 {
+  background-color: gray;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10%;
+  border: 2px solid black;
+}
+
+.th2 {
+  background-color: darkgrey;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10%;
+  border: 2px solid black;
+}
+
+input {
+  font-size: 10px;
+}
+
+button {
+  background-color: deepskyblue;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10%;
 }
 
 * {

@@ -2,7 +2,7 @@ header{
     display: flex;
     flex-direction: column;
     justify-content: center;
-
+    flex-wrap: wrap;
 }
 .nav{
     ul{
@@ -16,6 +16,7 @@ header{
             border: 2px solid black;
             border-radius: 10px;
             text-align: center;
+            margin: 2px;
             a{
                 color: white;
                 text-decoration: none;

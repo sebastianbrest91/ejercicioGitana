@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Predicciones - On-Line</title>
+    <title>Productos - On-Line</title>
     <link rel="stylesheet" href="../styles/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <meta name="description" content="c">
     <meta name="keywords" content="c">
     <meta name="author" content="Sebastian Brest">
-    <script src="../js/predicciones.js" defer ></script>
+    <script src="../js/productos.js" defer ></script>
 </head>
 <body>
     <header>
@@ -26,30 +26,18 @@
             </nav>
         </div>
     </header>
-    <main class="mainpredicciones">
+    <main class="mainproductos">
         <section>
-            <h1>¿Quien ganara?</h1>
-            <p>Solo con saber el nombre de los concursantes la Gitana te dira quien gano</p>
-            <img  class="imglogog" src="../img/logog.jpg" alt="gdegitana">
+            <div id="cards-container">
+            </div>
         </section>
         <section>
-            <form id="formjugadores">
-                <div>
-                    <label for="nombre1">Nombre 1:</label>
-                    <input type="text" name="nombre1" id="nombre1" required>
-                </div>
-                <div>
-                    <label for="nombre2">Nombre 2:</label>
-                    <input type="text" name="nombre2" id="nombre2" required>
-                </div>
-                <div>
-                    <button type="submit">ENVIAR</button>
-                </div>
-                <div>
-                    <label for="ganador">Ganador:</label>
-                    <input type="text" name="ganador" id="ganador" readonly>
-                </div>
-            </form>
+            <h2>Carrito</h2>
+            <ul id="carrito-lista"></ul>
+            <p>Total: $<span id="carrito-total">0</span></p>
+            <div>
+                <button id="vaciar-carrito">Vaciar carrito</button>
+            </div>
         </section>
     </main>
     <footer>
